@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>LIST</title>
+  </head>
+    <body>
+    
+	<style type="text/css">
+	ol {
+   list-style: none;
+   counter-reset: li;
+}
+li:before {
+   counter-increment: li;
+   content: counters(li, ".") ". ";
+}
+	</style>
+	
+	<ol>
+   <li>пункт</li>
+   <li>пункт
+      <ol>
+         <li>пункт</li>
+         <li>пункт</li>
+         <li>пункт
+            <ol>
+               <li>пункт</li>
+               <li>пункт</li>
+               <li>пункт</li>
+            </ol>
+         </li>
+         <li>пункт</li>
+      </ol>
+   </li>
+   <li>пункт</li>
+   <li>пункт</li>
+</ol>
+
+  </body>
+</html>
